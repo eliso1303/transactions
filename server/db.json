@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "title": "transaction 1",
+      "amount": 40,
+      "category": "gasoline",
+      "date": "11/16/2020",
+      "comment": "some comment"
+    },
+    {
+      "id": "2",
+      "title": "transaction 2",
+      "amount": 40,
+      "category": "gasoline",
+      "date": "11/18/2020",
+      "comment": "some comment 2"
+    },
+    {
+      "id": "D_x7L5R",
+      "title": "transaction 3",
+      "amount": 30.5,
+      "category": "charity",
+      "date": "2020-11-12",
+      "comment": "some comment 6"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+@import "src/styles/index";
+
+.add-filter {
+    padding: 12px 26px;
+    background: $color-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include media-for($mobile) {
+        display: block;
+    }
+
+    .add-payment {
+        h2 {
+            color: $color-5;
+            font-size: 11px;
+            line-height: 13px;
+            padding: 23px 29px 24px 44px;
+            position: relative;
+            border-right: 1px solid $color-10;
+            cursor: pointer;
+
+            @include media-for($mobile) {
+                margin-bottom: 30px;
+                border-right: none;
+                width:100%;
+                box-sizing: border-box;
+            }
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 12px;
+                content: url(/assets/svg/add.svg);
+            }
+        }
+    }
+
+    .filterForm {
+        input {
+            height: 60px;
+            width: 168px;
+            border: none;
+            border-left: 1px solid $color-10;
+            border-right: 1px solid $color-10;
+            background: transparent;
+            padding: 0px 19px;
+            margin-right: 17px;
+            outline: none;
+
+            @include media-for($mobile) {
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+            }
+        }
+        button {
+            background: $color-6;
+            color: $color-2;
+            border-radius: 15px;
+            padding: 7px 44px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+
+            @include media-for($mobile) {
+                width: 100%;
+            }
+        }
+    }
+}

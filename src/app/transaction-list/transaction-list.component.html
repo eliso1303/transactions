@@ -1,0 +1,29 @@
+<div class="transaction-list container">
+    <div>
+        <ul>
+            <li *ngFor="let transaction of transactions | search: searchText: filterMetadata; let i = index;"
+                [ngClass]="{'active': active === i}" (click)="setActive(i)">
+                <div class="transaction-info">
+                    <div>
+                        <h3>{{transaction.title }}</h3>
+                        <h4>{{transaction.category}}</h4>
+                    </div>
+
+                    <div class="date-amount">
+                        <span>On {{transaction.date | date: 'EEEE, d MMMM y'}}</span>
+                        <p>-{{transaction.amount | number:'1.2-2'}}<span>GEL</span></p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <h5>Comment:</h5>
+                    <p>{{transaction.comment}}</p>
+                </div>
+            </li>
+        </ul>
+
+        <p class="total">Total: <span>{{filterMetadata.sum | number:'1.2-2'}}</span></p>
+    </div>
+
+    <h2>{{filterMetadata.count}} Elements Found</h2>
+</div>

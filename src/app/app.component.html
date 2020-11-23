@@ -1,0 +1,20 @@
+<app-header></app-header>
+ 
+<app-create-transaction *ngIf="popupShow" (eventChange)="onChange($event)" (onCloseClick)="popupShow = false"></app-create-transaction>
+
+<div class="container">
+    <div class="add-filter">
+        <div class="add-payment">
+            <h2 (click)="popupShow = true">ADD PAYMENT</h2>
+        </div>
+        <form class="filterForm" #filterForm>
+            <input #filterWith placeholder="filter by any property...">
+
+            <button (click)="transactionFilter(filterWith.value); filterForm.reset()">Filter</button>
+        </form>
+    </div>
+</div>
+
+<app-transaction-list [searchText]='searchText' [event]="event"></app-transaction-list>
+
+<app-footer></app-footer>

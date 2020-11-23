@@ -1,0 +1,45 @@
+<div class="overlay">
+    <div class="payment">
+        <div class="head">
+            <h3>ADD NEW PAYMENT</h3>
+            <span (click)="closePopup()">X</span>
+        </div>
+
+        <form>
+            <div class="form-group title">
+                <label for="title">Title:</label>
+                <input type="text" id="title" [(ngModel)]="TransactionDetails.title" name="title">
+            </div>
+
+            <!-- <my-custom-input [type]="'text'" [className]="'title'" [idName]="'title'" [model]="TransactionDetails.title" [name]="'title'"></my-custom-input> -->
+
+            <div class="form-group amount">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" [(ngModel)]="TransactionDetails.amount"
+                    name="amount">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" [(ngModel)]="TransactionDetails.category" name="category">
+                    <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" [(ngModel)]="TransactionDetails.date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <input type="text" [(ngModel)]="TransactionDetails.comment" id="comment"
+                    name="comment">
+            </div>
+
+            <div class="form-group create">
+                <button (click)="addTransaction($event); closePopup();">CREATE</button>
+            </div>
+        </form>
+    </div>
+</div>

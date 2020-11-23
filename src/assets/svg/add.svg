@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Group_1" data-name="Group 1" transform="translate(-399 -113)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(400 114)" fill="none" stroke="#a1c4ff" stroke-linejoin="round" stroke-width="1">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="16.5" fill="none"/>
+    </g>
+    <image id="add" width="17" height="17" transform="translate(408 122)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABHNCSVQICAgIfAhkiAAAAJ9JREFUOE/t1D0OAWEUheFn6FCKn1VYwCxFTKdVWYZKqzKisQ6zAKvwEyU6Ppl2YjKC0q1P3tycc+6NQgjKJs10McckiR3LdFEFpI81hkls/ymkhwXGSezwh5BmWlhhlMQupZ4styGPsYZXWXcwwxSnF5AIj2i5DRu0cS2I7mhggB1uqBc0TZxzyPebVJTtPU8qIP+yFfJLMz+54rf+yRMjPHbsI7sNPQAAAABJRU5ErkJggg=="/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+.container {
+    width: $containerHD;
+    margin: auto;
+    box-sizing: border-box;
+
+    @include media-for($notebook) {
+        width: $container;
+    }
+
+    @include media-for($tablet) {
+        width: 100%;
+        padding: 0px 48px;
+    }
+
+    @include media-for($mobile) {
+        width: 100%;
+        padding: 0px 30px;
+    }
+}
